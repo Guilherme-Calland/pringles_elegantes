@@ -5,4 +5,4 @@ ways you can dodge an attack:
 1 - duck - high area attack
 2 - jump - low area attack
 3 - cartwheel sideways - sting attack
-4 - backflip - close range area attack
+4 - jump back- close range area attack
