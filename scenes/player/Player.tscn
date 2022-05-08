@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://graphics/player/idle/sprite_sheet.png" type="Texture" id=1]
+
+[node name="Player" type="KinematicBody"]
+
+[node name="Sprite" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0 )
+texture = ExtResource( 1 )
+hframes = 2

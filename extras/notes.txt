@@ -1,0 +1,8 @@
+we are going to make a 3D game that looks like a 2D game
+
+ways you can dodge an attack:
+
+1 - duck - high area attack
+2 - jump - low area attack
+3 - cartwheel sideways - sting attack
+4 - backflip - close range area attack
