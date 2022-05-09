@@ -8,6 +8,7 @@ var motion = Vector3.ZERO
 
 func _ready():
 	animationPlayer.play("idleSouth")
+#	animationPlayer.play("teste")
 
 func run():
 	if Input.is_action_pressed("north") and not Input.is_action_pressed("south"):

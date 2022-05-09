@@ -1,18 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/levels/templateLevel/TemplateLevel.gd" type="Script" id=2]
-[ext_resource path="res://graphics/player/idle/sprite_sheet.png" type="Texture" id=3]
 
 [node name="TestLevel" type="Spatial"]
 script = ExtResource( 2 )
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-
-[node name="Camera" type="Camera" parent="Player"]
-transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0.512436, 0.435088 )
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.641, 2.304 )
+projection = 1
 current = true
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0.322733, 0.00389096, -2.98023e-08 )
-texture = ExtResource( 3 )
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.820703 )
