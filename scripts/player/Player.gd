@@ -2,6 +2,7 @@ extends KinematicBody
 
 onready var animationPlayer = $Animation/AnimationPlayer
 onready var sprite = $Animation/Sprite
+var orientation = "south"
 
 export var speed = 0.5
 
@@ -31,18 +32,18 @@ func run():
 		if verticalButtonPressed():
 			checkWhatDiagonalAnimationShouldBePlayed()
 		else:
-			animationPlayer.play("idleHorizontal")
+			animationPlayer.play("walkingHorizontal")
 	elif buttonPressed("west"):
 		sprite.flip_h = true
 		if verticalButtonPressed():
 			checkWhatDiagonalAnimationShouldBePlayed()
 		else:
-			animationPlayer.play("idleHorizontal")
+			animationPlayer.play("walkingHorizontal")
 	else:
 		if buttonPressed("north"):
-			animationPlayer.play("idleNorth")
+			animationPlayer.play("walkingNorth")
 		elif buttonPressed("south"):
-			animationPlayer.play("idleSouth")
+			animationPlayer.play("walkingSouth")
 	
 func buttonPressed(button):
 	if button == 'north':
@@ -56,9 +57,9 @@ func buttonPressed(button):
 
 func checkWhatDiagonalAnimationShouldBePlayed():
 	if buttonPressed("north"):
-		animationPlayer.play("idleDiagonalNorth")
+		animationPlayer.play("walkingDiagonalNorth")
 	elif buttonPressed("south"):
-		animationPlayer.play("idleDiagonalSouth")
+		animationPlayer.play("walkingDiagonalSouth")
 
 func move(orientation):
 	if orientation == "north":
