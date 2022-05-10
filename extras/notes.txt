@@ -6,3 +6,6 @@ ways you can dodge an attack:
 2 - jump - low area attack
 3 - cartwheel sideways - sting attack
 4 - jump back- close range area attack
+
+######
+

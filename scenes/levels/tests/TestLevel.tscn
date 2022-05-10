@@ -7,9 +7,9 @@
 script = ExtResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.641, 2.304 )
+transform = Transform( 1, 0, 0, 0, 0.92388, 0.382684, 0, -0.382684, 0.92388, 0.000248969, 1.641, 1.77453 )
 projection = 1
 current = true
+size = 3.0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.820703 )
