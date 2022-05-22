@@ -1,0 +1,1 @@
+procurar uma forma de maximizar o tamanho da tela sem fazer um 'stretch'.

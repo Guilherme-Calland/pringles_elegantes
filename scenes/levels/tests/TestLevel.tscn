@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/levels/templateLevel/TemplateLevel.gd" type="Script" id=2]
-[ext_resource path="res://graphics/terrain/pinkCube.glb" type="PackedScene" id=3]
+[ext_resource path="res://graphics/terrain/WhiteCube.glb" type="PackedScene" id=3]
 [ext_resource path="res://default_env.tres" type="Environment" id=4]
 
 [node name="TestLevel" type="WorldEnvironment"]
@@ -18,5 +18,5 @@ size = 3.0
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, -0.038765, 0 )
 
-[node name="pinkCube" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.106066, 0, -0.106066, 0, 0.15, 0, 0.106066, 0, -0.106066, 0, -0.292003, 0 )
+[node name="WhiteCube" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.324123, 0 )
