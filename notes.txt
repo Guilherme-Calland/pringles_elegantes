@@ -1,1 +1,3 @@
 procurar uma forma de maximizar o tamanho da tela sem fazer um 'stretch'.
+
+deixar um indicador não só da próxima nota mais a que vai vim depois disso.
