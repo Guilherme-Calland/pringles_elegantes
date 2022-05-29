@@ -1,3 +1,12 @@
 procurar uma forma de maximizar o tamanho da tela sem fazer um 'stretch'.
 
 deixar um indicador não só da próxima nota mais a que vai vim depois disso.
+
+usa atrito para ter estagios escorregadios.
+
+a animação de correndo é igual a sonic ou horace com os braços pra traz
+
+esquiva: pular, se agachar, estrelinha do lado.
+
+todo na animacao: terminar de animar a bolsa para tras quando ele tiver na parte
+mais abaixada da animacao. centralizar a cabeça no idle_sprite_sheet.
