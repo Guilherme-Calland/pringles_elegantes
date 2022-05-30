@@ -8,5 +8,5 @@ a animação de correndo é igual a sonic ou horace com os braços pra traz
 
 esquiva: pular, se agachar, estrelinha do lado.
 
-todo na animacao: terminar de animar a bolsa para tras quando ele tiver na parte
-mais abaixada da animacao. centralizar a cabeça no idle_sprite_sheet.
+remover a bolsa, separar a mao, pes e corpo, usar animacao de rotacao
+ao invez de fazer animacao frame por frame.

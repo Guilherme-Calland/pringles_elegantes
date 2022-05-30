@@ -30,21 +30,42 @@ func run():
 	if buttonPressed("east"):
 		sprite.flip_h = false
 		if verticalButtonPressed():
-			checkWhatDiagonalAnimationShouldBePlayed()
+			if buttonPressed("north"):
+				animationPlayer.play("walkingDiagonalNorth")
+				orientation = "diagonalNorth"
+			elif buttonPressed("south"):
+				animationPlayer.play("walkingDiagonalSouth")
+				orientation = "diagonalSouth"
 		else:
 			animationPlayer.play("walkingHorizontal")
+			orientation = "horizontal"
 	elif buttonPressed("west"):
 		sprite.flip_h = true
 		if verticalButtonPressed():
-			checkWhatDiagonalAnimationShouldBePlayed()
+			if buttonPressed("north"):
+				animationPlayer.play("walkingDiagonalNorth")
+				orientation = "diagonalNorth"
+			elif buttonPressed("south"):
+				animationPlayer.play("walkingDiagonalSouth")
+				orientation = "diagonalSouth"
 		else:
 			animationPlayer.play("walkingHorizontal")
+			orientation = "horizontal"
 	else:
 		if buttonPressed("north"):
 			animationPlayer.play("walkingNorth")
+			orientation = "north"
 		elif buttonPressed("south"):
 			animationPlayer.play("walkingSouth")
+			orientation = "south"
 	
+	if isIdle():
+		var animation = "idle" + orientation[0].to_upper() + str(orientation.trim_prefix(str(orientation[0])))
+		animationPlayer.play(animation)
+
+func isIdle():
+	return motion.x == 0 && motion.z == 0
+
 func buttonPressed(button):
 	if button == 'north':
 		return Input.is_action_pressed("north") and not Input.is_action_pressed("south")
@@ -55,26 +76,20 @@ func buttonPressed(button):
 	elif button == 'west':
 		return Input.is_action_pressed("west") and not Input.is_action_pressed("east")
 
-func checkWhatDiagonalAnimationShouldBePlayed():
-	if buttonPressed("north"):
-		animationPlayer.play("walkingDiagonalNorth")
-	elif buttonPressed("south"):
-		animationPlayer.play("walkingDiagonalSouth")
-
-func move(orientation):
-	if orientation == "north":
+func move(inOrientation):
+	if inOrientation == "north":
 		motion.z = -speed
-	elif orientation == "south":
+	elif inOrientation == "south":
 		motion.z = speed
-	elif orientation == "east":
+	elif inOrientation == "east":
 		motion.x = speed
-	elif orientation == "west":
+	elif inOrientation == "west":
 		motion.x = -speed
 
-func stop(direction):
-	if direction == "horizontal":
+func stop(inDirection):
+	if inDirection == "horizontal":
 		motion.x = 0
-	elif direction == "vertical":
+	elif inDirection == "vertical":
 		motion.z = 0
 
 func updateMotionVector():
