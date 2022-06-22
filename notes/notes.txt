@@ -1,0 +1,45 @@
+deixar um indicador não só da próxima nota mais a que vai vim depois disso.
+
+usa atrito para ter estagios escorregadios.
+
+a animacao do corpo continua no ritmo da musica a menos se voce ta pulando ou se agachando.
+
+um indicador de nota branco (ou alguma cor marcante) quer dizer voce pode parar de pular
+nas notas por um tempo, é só ir caminhando na direcao da próxima nota mas, nao vai precisar tocar agora. ele vai avisa o tempo que vai voltar. o indicador de pulo nao deveria ficar
+no canto da tela, deveria ficar proximo a onde voce ta olhando, no caso ja na proxima nota.
+
+se voce cair voce vai respawnar em cima da prxima nota.
+
+o idle e o andar tem que estar no mesmo ritmo.
+
+terreno -> pixel art com os lados separados e com perspectiva. tudo no mesmo angulo do boneco.
+
+para colocar tudo no mesmo ritmo, uma batida em loop que nem no tune city original,
+aonde ele vai forçar o sprite a entrar no valor correto(vê la no animated sprite) se ele ja não estiver lá.
+
+###########
+###########
+##coisas pra lidar no estágio fora as notas##
+
+*cada elemento será inserido incrementalmente conforme o jogador vai se familiarizando com o jogo.
+
+1- caminhar por cima de tiles transversais. (angulos de 90 graus entr eles).
+2- caminhar por cima de tiles diagonais. (angulos de 90 graus entre eles).
+3- variação de transversais com diagonais. (formatos circulares, em formas de 'S', ângulos agudos e obtusos).
+4- gelo (atrito baixo).
+5- esquivar dos obstáculos (agachar, dash).
+6- pular pra quicar nas paredes. (requer nivelação aí vou deixar por último).
+
+############
+############
+##dash##
+
+* usar analógico direito.
+* dash.png
+
+#############
+
+o boneco terá 4 sprites, o corpo, handLeft, handRight, footLeft, footRight.
+
+os jogadores que faltam serão substituídos pelo computador que vai tocar perfeitamente.
+
