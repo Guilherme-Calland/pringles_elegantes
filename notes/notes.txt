@@ -39,7 +39,7 @@ aonde ele vai forçar o sprite a entrar no valor correto(vê la no animated spri
 
 #############
 
-o boneco terá 4 sprites, o corpo, handLeft, handRight, footLeft, footRight.
-
 os jogadores que faltam serão substituídos pelo computador que vai tocar perfeitamente.
+
+quanto mais "errado" for a nota tocada, menor será o volume.
 
